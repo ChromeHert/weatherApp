@@ -1,7 +1,7 @@
 import './App.css'
 import React, { useState, useEffect } from 'react';
 import Weather from './Components/Weather';
-import bgVideo from '../src/assets/weatherVidBg.mp4';
+import bgVideo from '../src/assets/weatherVid.mp4';
 
 
 function App() {
@@ -62,7 +62,7 @@ function App() {
 
         {loading ? (
             <div className="mt-4">
-              Loading...
+              Fetching...
             </div>
         ) : (
           <Weather weatherData={data} />
